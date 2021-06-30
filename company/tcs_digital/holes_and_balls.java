@@ -1,3 +1,4 @@
+//https://www.geeksforgeeks.org/tcs-codevita-holes-and-balls/
 import java.util.*;
 public class Main
 {
