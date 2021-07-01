@@ -3,7 +3,6 @@ public class Main
 {
 	public static void main(String[] args) 
 	{
-		System.out.println("Hello World");
 		int n = 3;
 		// initializing with a size of 3, thats why (n)
 		ArrayList<ArrayList<Integer>> adj = new ArrayList<>(n);
