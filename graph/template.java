@@ -1,7 +1,8 @@
 import java.util.*;
 public class Main
 {
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		System.out.println("Hello World");
 		int n = 3;
 		ArrayList<ArrayList<Integer>> adj = new ArrayList<>(n);
@@ -12,10 +13,10 @@ public class Main
 		
 		graph obj = new graph();
 		obj.addEdge(adj, 0, 1);
-        //obj.addEdge(adj, 0, 2);
-        obj.addEdge(adj, 1, 2);
-        
-        obj.print(adj);
+		//obj.addEdge(adj, 0, 2);
+		obj.addEdge(adj, 1, 2);
+
+		obj.print(adj);
 	}
 	
 	static class graph
