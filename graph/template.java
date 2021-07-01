@@ -5,6 +5,7 @@ public class Main
 	{
 		System.out.println("Hello World");
 		int n = 3;
+		// initializing with a size of 3, thats why (n)
 		ArrayList<ArrayList<Integer>> adj = new ArrayList<>(n);
 		for(int x=0;x<n;x++)
 		{
