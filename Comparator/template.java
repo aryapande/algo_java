@@ -1,5 +1,5 @@
 import java.util.*;
-
+//Collections.sort if for ArrayList and Arrays.sort is for normal arrays
 class Student
 {
     String name;
