@@ -4,6 +4,8 @@ class HelloWorld {
     public static void main(String[] args) {
         
         PriorityQueue<Integer> p= new PriorityQueue<>();
+        // PriorityQueue<Integer> p= new PriorityQueue<>(Collections.reverseOrder());
+        
         p.add(30);
         p.add(56);
         p.add(3);
