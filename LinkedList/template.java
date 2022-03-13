@@ -1,4 +1,21 @@
-class LinkedList
+class HelloWorld {
+    public static void main(String[] args) {
+       
+        LL obj = new LL();
+        obj.insertEnd(6);
+        obj.insertEnd(5);
+        obj.insertStart(53);
+        obj.insertEnd(5);
+        obj.print();
+        
+        obj.deleteStart();
+        obj.print();
+        obj.deleteEnd();
+        obj.print();
+        
+    }
+}
+class LL
 {
     Node head;
     
@@ -6,52 +23,74 @@ class LinkedList
     {
         Node next;
         int val;
-        Node(int v)
+        Node(int val)
         {
-            v = 0;
+            this.val = val;
             next = null;
         }
     }
-    
-    public void insert(int v)
+    void insertEnd(int v)
     {
-        Node newnode = new Node(v);
-        if(head == null)
+        Node temp = head;
+        Node newNode = new Node(v);
+        if(head==null)
         {
-            head = newnode;
+            head = newNode;
         }
         else
         {
-            Node temp = head;
             while(temp.next!=null)
             {
                 temp = temp.next;
             }
-            temp.next = newnode;
+            temp.next = newNode;
         }
     }
-    public void print()
+    void insertStart(int v)
+    {
+        Node newNode = new Node(v);
+        if(head==null)
+        {
+            head = newNode;
+        }
+        else
+        {
+            newNode.next = head;
+            head = newNode;
+        }
+    }
+    void print()
     {
         Node temp = head;
         while(temp!=null)
         {
+            
             System.out.print(temp.val+"->");
             temp = temp.next;
         }
+        System.out.println();
     }
-    
-}
-
-
-
-
-
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-        LinkedList l = new LinkedList();
-        l.insert(5);
-        l.insert(3);
-        l.print();
+    void deleteStart()
+    {
+        if(head != null)
+        {
+            head= head.next;
+        }
+    }
+    void deleteEnd()
+    {
+        if(head!=null)
+        {
+            Node temp = head;
+            Node tempPrev = null;
+            while(temp.next!=null)
+            {
+                tempPrev = temp;
+                temp = temp.next;
+                
+            }
+            tempPrev.next = null;
+            temp = null;
+        }
     }
 }
