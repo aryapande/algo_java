@@ -7,6 +7,8 @@ PriorityQueue from Collections for heaps , default is minheap
 
 >Reverse array in O(n): swap with 2 pointer with left at 0 and right at (n-1)
 
+##ArrayList in ArrayList
+
 ```
 ArrayList<ArrayList<Integer>> a = new ArrayList<>();
         a.add(new ArrayList<Integer>());
@@ -18,3 +20,6 @@ ArrayList<ArrayList<Integer>> a = new ArrayList<>();
         System.out.println(a);
 ```
 >[[42, 412], [2]]
+
+## Integer array in arrayList
+> ArrayList<int []> 
